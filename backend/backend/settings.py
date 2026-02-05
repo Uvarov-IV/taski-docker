@@ -1,7 +1,5 @@
 import os
-
 from pathlib import Path
-
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -124,7 +122,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
 ]
-scp -i /Users/uvarov/.ssh/keys_yandex/yc-igoruvarov064 docker-compose.production.yml \
-    yc-user@89.169.174.95:/home/yc-user/taski/docker-compose.production.yml 
-
-scp -i /Users/uvarov/.ssh/keys_yandex/yc-igoruvarov064 .env yc-user@89.169.174.95:~/taski/
